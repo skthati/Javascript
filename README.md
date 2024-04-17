@@ -80,7 +80,36 @@ var maxSentence = 50
 message = `Character count is: ${mySentence.length}. You have {maxSentence - mySentence.length} characters left!`
 
 document.querySelector('#header`).innerHTML = message
+```
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<hr>  
+
+### Character Count - Javascript - html
+Count no of characters typed.
+```html, javascript
+<!DOCTYPE html>
+<html  lang="en">
+	<head>
+    	<meta charset="UTF-8">
+        <title> Count Characters </title>
+        <script>
+        	function countCharacters() {
+            	var message = document.getElementById('inputText').value;
+                var messageCount = message.length;
+                document.getElementById('characterCount').innerText = "Character Count: " + messageCount;
+           	}
+        </script>
+            
+    </head>
+    <body>
+    	<label for="inputText">Enter your text: </label>
+        <input type="text" id="inputText" oninput="countCharacters()">
+        <div id="characterCount">Character Count: </div>
+    </body>
+</html>
+    	
+```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <hr>  
 
