@@ -3,7 +3,7 @@
 
 <div align="center">
 <!-- Title: -->
-<h1><a href="https://github.com/skthati/javascript/">Javascript</a> - Basics </h1>
+<h1><a href="https://github.com/skthati/Javascript.git">Javascript</a> - Basics </h1>
 </div>
 
 <!-- Table of contents -->
@@ -11,13 +11,15 @@
 <hr>
 <ol>
     <li><a href="#js-basics">JS Basics</a></li>
+    <li><a href="#length-of-sentence">Length of Sentence</a></li>
+    <li><a href="#count-characters-while-typing">Count no of Characters while type</a></li>
 
 </ol>
 <hr>
 <hr>
 
 
-# Javascript Basics 
+# Javascript Basics <a name="js-basics"></a>
  All basic code syntax 
 
 ```Javascript
@@ -85,7 +87,7 @@ document.querySelector('#header`).innerHTML = message
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <hr>  
 
-### Character Count - Javascript - html
+## Character Count - Javascript - html <a name="count-characters-while-typing"></a>
 Count no of characters typed.
 
 ![Alt text](count-characters/character-count.gif)
