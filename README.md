@@ -87,6 +87,10 @@ document.querySelector('#header`).innerHTML = message
 
 ### Character Count - Javascript - html
 Count no of characters typed.
+
+![Alt text](count-characters/character-count.gif)
+
+
 ```html, javascript
 <!DOCTYPE html>
 <html  lang="en">
