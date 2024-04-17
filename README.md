@@ -13,6 +13,7 @@
     <li><a href="#js-basics">JS Basics</a></li>
     <li><a href="#length-of-sentence">Length of Sentence</a></li>
     <li><a href="#count-characters-while-typing">Count no of Characters while type</a></li>
+    <li><a href="d_age-to-h_age-calc">Dog age to Human age Calculator</a></li>
 
 </ol>
 <hr>
@@ -30,24 +31,43 @@ console.log("Hello World!")
 #Python
 print("Hellow World!")
 ```
-##### Alert
+### Alert
 ```Javascript
 alert("Hello from pop up window!")
 ```
 
-##### Prompt
+### Prompt
 ```Javascript
 var message = prompt("Enter your name: ")
 
-##### Slice
+### Slice
 ```Javascript
 alert(prompt("slice code: ").slice(0, 10))
 ```
 
-
+### To lower case
+```Javascript
+message = message.toLowerCase();
 ```
-### Length of sentence
-###### Console
+
+### To Upper Case
+```javascript
+message = message.toUpperCase();
+```
+### To Title Case
+```javascript
+var message = 'hello'
+m1 = message.slice(0, 1)
+console.log(m1)
+m2 = message.slice(1, message.length)
+console.log(m2)
+title_message = m1.toUpperCase() + m2
+console.log(title_message)
+```
+
+
+## Length of sentence
+### Console
 ```Javascript
 var message = prompt("Enter your name: ")
 console.log(message.length)
@@ -56,7 +76,7 @@ console.log(message.length)
 7
 ----
 ```
-###### HTML
+### HTML
 index.html
 ```html
 <!DOCTYPE html>
@@ -97,8 +117,10 @@ document.querySelector('#header`).innerHTML = message
 ## Character Count - Javascript - html <a name="count-characters-while-typing"></a>
 Count no of characters typed.
 
-![Alt text](count-characters/character-count.gif = 400x300)
-![Alt text](count-characters/alert_char_limit.gif = 500x400)
+![Alt text](count-characters/character-count.gif)
+</hr>
+
+![Alt text](count-characters/alert_char_limit.gif)
 
 ```html, javascript
 <!DOCTYPE html>
@@ -132,6 +154,32 @@ Count no of characters typed.
 </html>
     	
 ```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<hr>  
+
+## Dog Age to Human Age Calculator <a name="d_age-to-h_age-calc">
+
+Formula = `human-age = (dog-age - 2) * 4 + 21
+
+![Alt text](dog_human_age_calculator/dog-age.gif)
+
+```Javascript
+
+function human_age(d_age) {
+    human_age = ((d_age - 2) * 4) + 21
+    return human_age
+}
+
+var d_age = prompt("Enter dog age: ")
+console.log(human_age(d_age))
+
+---------
+Output
+
+53
+
+```
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <hr>  
 
