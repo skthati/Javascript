@@ -97,8 +97,8 @@ document.querySelector('#header`).innerHTML = message
 ## Character Count - Javascript - html <a name="count-characters-while-typing"></a>
 Count no of characters typed.
 
-![Alt text](count-characters/character-count.gif)
-![Alt text](count-characters/alert_char_limit.gif)
+![Alt text](count-characters/character-count.gif = 400x300)
+![Alt text](count-characters/alert_char_limit.gif = 500x400)
 
 ```html, javascript
 <!DOCTYPE html>
