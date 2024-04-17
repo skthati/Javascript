@@ -11,9 +11,7 @@
 <hr>
 <ol>
     <li><a href="#js-basics">JS Basics</a></li>
-    <li><a href="#exceptions">Python Exceptions</a></li>
-    <li><a href="#function_overloading">Function Overloading</a></li>
-    <li><a href="#bloopers">Bloopers</a></li>
+
 </ol>
 <hr>
 <hr>
