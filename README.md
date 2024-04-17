@@ -38,6 +38,13 @@ alert("Hello from pop up window!")
 ##### Prompt
 ```Javascript
 var message = prompt("Enter your name: ")
+
+##### Slice
+```Javascript
+alert(prompt("slice code: ").slice(0, 10))
+```
+
+
 ```
 ### Length of sentence
 ###### Console
@@ -91,9 +98,10 @@ document.querySelector('#header`).innerHTML = message
 Count no of characters typed.
 
 ![Alt text](count-characters/character-count.gif)
-
+![Alt text](count-characters/alert_char_limit.gif)
 
 ```html, javascript
+<!DOCTYPE html>
 <!DOCTYPE html>
 <html  lang="en">
 	<head>
@@ -103,8 +111,15 @@ Count no of characters typed.
         	function countCharacters() {
             	var message = document.getElementById('inputText').value;
                 var messageCount = message.length;
-                document.getElementById('characterCount').innerText = "Character Count: " + messageCount;
+                var maxCount = 20
+                if (messageCount > 20) {
+                	alert("Only 20 Characters are allowed!")
+                }
+                
+                document.getElementById('characterCount').innerText = "Character Count: " + messageCount + "/" + maxCount ;
+                document.getElementById('slicedMessage').innerText = message;
            	}
+            
         </script>
             
     </head>
@@ -112,6 +127,7 @@ Count no of characters typed.
     	<label for="inputText">Enter your text: </label>
         <input type="text" id="inputText" oninput="countCharacters()">
         <div id="characterCount">Character Count: </div>
+        <div id="slicedMessage"></div>
     </body>
 </html>
     	
