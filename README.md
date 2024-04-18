@@ -14,6 +14,8 @@
     <li><a href="#length-of-sentence">Length of Sentence</a></li>
     <li><a href="#count-characters-while-typing">Count no of Characters while type</a></li>
     <li><a href="d_age-to-h_age-calc">Dog age to Human age Calculator</a></li>
+    <li><a href="bmi-calculator">BMI Calculator</a></li>
+    <li><a href="random-number-generator">Generate Random Number</a></li>
 
 </ol>
 <hr>
@@ -157,7 +159,7 @@ Count no of characters typed.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <hr>  
 
-## Dog Age to Human Age Calculator <a name="d_age-to-h_age-calc">
+## Dog Age to Human Age Calculator <a name="d_age-to-h_age-calc"></a>
 
 Formula = `human-age = (dog-age - 2) * 4 + 21
 
@@ -179,8 +181,22 @@ Output
 53
 
 ```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<hr>  
+
+## BMI Calculator <a name="bmi-calculator">
+
+
+![Alt text](bmi-calculator/bmi_calc.gif)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <hr>  
 
+## Random Number Generator <a name="random-number-generator"></a>
 
+Generate random number using minimum and maximum values inclusive. JS `Math.random`.
+
+![Alt text](random-number-generator/random-number.gif)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<hr>  
