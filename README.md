@@ -200,3 +200,19 @@ Generate random number using minimum and maximum values inclusive. JS `Math.rand
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <hr>  
+
+
+<details open> 
+    <summary> 
+      What is Lorem Ipsum?
+    </summary>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 
+</details>
+
+<details> 
+    <summary> 
+      Why do we use it?
+    </summary>
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum 
+
+<div style=" float: left; overflow: auto;">
