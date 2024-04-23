@@ -16,6 +16,7 @@
     <li><a href="d_age-to-h_age-calc">Dog age to Human age Calculator</a></li>
     <li><a href="bmi-calculator">BMI Calculator</a></li>
     <li><a href="random-number-generator">Generate Random Number</a></li>
+    <li><a href="leap-year">Leap Year</a></li>
 
 </ol>
 <hr>
@@ -201,8 +202,16 @@ Generate random number using minimum and maximum values inclusive. JS `Math.rand
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <hr>  
 
+## Leap Year <a name="leap-year"></a>
 
-<details open> 
+Check if a year is leap year or not. Also finds all leap years with in year range. Creates new line after every 4 year items. Full stop at the end. Comma after every year.
+
+![Alt text](leap-year/leap-year.gif)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<hr>  
+
+<!-- <details open> 
     <summary> 
       What is Lorem Ipsum?
     </summary>
@@ -215,4 +224,5 @@ Generate random number using minimum and maximum values inclusive. JS `Math.rand
     </summary>
 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum 
 
-<div style=" float: left; overflow: auto;">
+<div style=" float: left; overflow: auto;"> -->
+

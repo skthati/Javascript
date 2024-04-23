@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leap Year</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script>
+        
+        var is_leap = true
+        function leapYear(l_year){
+            if (l_year % 4 == 0){
+
+                if (l_year % 100 == 0) {
+
+                    if (l_year % 400 == 0) {
+                        // document.getElementById('yearOutput').innerText = `${l_year} is Leap Year!`
+                        return true
+                    }
+                    else{
+                        // document.getElementById('yearOutput').innerText = `${l_year} is NOT a Leap Year!`
+                        return false
+                    }
+                }
+
+                else {
+                    // document.getElementById('yearOutput').innerText = `${l_year} is Leap Year!`
+                    return true
+                }
+            }
+
+            else {
+                // document.getElementById('yearOutput').innerText = `${l_year} is not Leap Year!`
+                return false
+            }
+        }
+
+        function updateDivElement(thisYear, is_leap) {
+            if (is_leap == true) {
+                document.getElementById('yearOutput').innerText = `${thisYear} is LEAP Year!`
+            } else if (is_leap == false) {
+                document.getElementById('yearOutput').innerText = `${thisYear} is NOT Leap Year!`
+            }
+        }
+
+        function organizeLst(leap_lst) {
+            gridTxt = "<hr>"
+            for(var i=0;i<leap_lst.length;i++){
+                //gridTxt = gridTxt + `<span class="badge badge-primary ">${leap_lst[i]}</span>`
+                gridTxt = gridTxt + ` ${leap_lst[i]}`
+                if (i == (leap_lst.length-1)) {
+                    gridTxt += `.`;
+                } else {
+                    gridTxt += `,`;
+                }
+
+                if ((i+1) % 4 == 0) {
+                    gridTxt += `<br>`;
+                }
+            }
+            return gridTxt
+        }
+
+
+        function leapCalculator() {
+            // Get the input value
+            leap_lst = []
+            var startYear = document.getElementById('startYear').value;
+            var endYear = document.getElementById('endYear').value;
+
+            if (startYear != "" & endYear == "") {
+                is_leap = leapYear(startYear)
+                updateDivElement(startYear, is_leap)
+            }
+
+            else if (startYear == "" & endYear != "") {
+                is_leap = leapYear(endYear)
+                updateDivElement(endYear, is_leap)
+
+            }
+            // if the year is leap year or not
+            
+            else if (startYear > endYear){
+                document.getElementById('yearOutput').innerText = ` End Year ${endYear} should be greater than Start Year ${startYear}`;
+            }
+            else if (startYear < endYear) {
+                for(i=startYear; i<=endYear; i++) {
+                    is_leap = leapYear(i)
+                    if (is_leap == true) {
+                        leap_lst.push(i)
+                    }
+                }
+                document.getElementById('yearOutput').innerHTML = ` Leap Years in-between  ${startYear} to ${endYear} are: \n ${organizeLst(leap_lst)} `;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5" tabindex="-1" role="dialog" id="modalSignin">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content rounded-4 shadow">
+            <div class="modal-header  text-center p-5 pb-4 border-bottom-0">
+              <h1 class="fw-bold mb-0 fs-2">Leap Year</h1>
+            </div>
+
+            <div class="modal-body p-5 pt-0">
+                <div class="mb-3">
+                    <label class="form-label" for="startYear">Enter start year:</label>
+                    <input class="form-control bg-light border mb-2" type="text" id="startYear" oninput="leapCalculator()">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="endYear">Enter end year:</label>
+                    <input class="form-control bg-light border mb-2" type="text" id="endYear" oninput="leapCalculator()">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="yearOutput">Leap Year/s :</label>
+                    <div class="form-control text-center bg-light fs-2 border " id="yearOutput">0</div>
+                </div>
+
+            </div>  
+          </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+
