@@ -17,6 +17,7 @@
     <li><a href="bmi-calculator">BMI Calculator</a></li>
     <li><a href="random-number-generator">Generate Random Number</a></li>
     <li><a href="leap-year">Leap Year</a></li>
+    <li><a href="roll-dice">Roll Dice</a></li>
 
 </ol>
 <hr>
@@ -117,6 +118,44 @@ document.querySelector('#header`).innerHTML = message
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <hr>  
 
+## HTML DOM
+
+### Get element by Id
+`const myElement = document.getElementById("FirstName")`
+
+
+### Get element by Tag Name.
+`const myElement = document.getElementByTagName("Div");`
+
+
+### Get element by Class Name.
+`const myElement = document.getElementByClassName("btn btn-primary")`
+
+### Get element by Query Selector.
+
+
+`const myElement = document.querySelector("h1")`
+
+
+`const myElement = document.querySelector(#class")`
+
+
+`const myElement = document.querySelector(".btn")`
+
+
+`document.querySelector(".btn").style.color = "red"`
+
+### Toggle visibility of an element.
+
+`document.querySelect(".btn").classList.toggle("invisible")`
+
+
+
+## CSS
+To select element, write the name of the element.
+To select class, write dot infront of the class name.
+To select ID, write # infront of the Id name.
+
 ## Character Count - Javascript - html <a name="count-characters-while-typing"></a>
 Count no of characters typed.
 
@@ -208,6 +247,14 @@ Check if a year is leap year or not. Also finds all leap years with in year rang
 
 ![Alt text](leap-year/leap-year.gif)
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<hr>  
+
+## Roll Dice <a name="roll-dice"></a>
+
+Every time 'Roll Dice' button is clicked, a random number is generated and is used to construct the image name and pull the relevant image
+
+![Alt text](roll-dice/dice-roll.gif)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <hr>  
 
